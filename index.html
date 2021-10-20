@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>@</title>
+  <style>
+    body{
+      margin: 0;
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+    }
+
+    div{
+      font-family: Montserrat;
+    }
+
+    .flex-container-mainframe {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/mainfraim-img.png);
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 900px;
+    }
+
+    .heading{
+      font-family: Montserrat,serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 53px;
+      text-align: center;
+    }
+
+    .flex-container-menu-back {
+      border-bottom: 1px solid #A1A1A1;
+    }
+    .flex-container-menu {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap-reverse;
+      align-content: center;
+      align-items: center;
+    }
+    .flex-container-menu-margin{
+      margin-right: 15%;
+    }
+    .flex-item {
+      text-align:center;
+      font-size: 1em;
+      padding: 1.5em;
+      color: white;
+      opacity: 0.8;
+      display: block;
+    }
+
+    .flex-container-mainframe-button-back{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .flex-container-info{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 110px;
+    }
+
+
+    .flex-container-projects {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 105px;
+    }
+
+    .flex-container-projects-back{
+      background-color: #F6F6F8;
+    }
+
+    .flex-container-projects-bottom-border{
+      border-top: 1px solid #E0E0E0;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 90px;
+    }
+
+    .flex-container-projects-bottom-info{
+      display: flex;
+      flex-direction: row;
+      align-content: space-around;
+      justify-content: space-around;
+      margin-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .flex-item-bottom-info{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+
+    .flex-item-bottom-info-title{
+      display: flex;
+      flex-direction: row;
+    }
+
+
+
+    a.menu-button {
+      outline: none;
+      text-decoration: none;
+      padding: 2px 1px 0;
+    }
+
+    a.menu-button:link {
+      color: white;
+    }
+
+    a.menu-button:visited {
+      color: white;
+    }
+
+    /*a:focus {
+      border-bottom: 1px solid;
+      background: none;
+    }*/
+
+   /* a:hover{ border-bottom: 2px solid #FFFFFF}*/
+    a.menu-button:hover { border-bottom: 2px solid #FFFFFF}
+
+    a.button-blue {
+      outline: none;
+    }
+
+    a.button-blue {
+      color: white;
+    }
+
+    a.button-blue {
+      color: white;
+    }
+    /* .color1 {background-color: #675BA7;}
+     .color2 {background-color: #9BC850;}
+     .color3 {background-color: #A62E5C;}
+     .color4 {background-color: #2A9FBC;}
+     .color5 {background-color: #F15B2A;}*/
+
+    .text{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+
+      color: #999999;
+    }
+
+    .flex-container-spec-back {
+      background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+      height: 490px;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+<div class="flex-container-mainframe">
+     <div class="flex-container-menu-back">
+       <div class="flex-container-menu " id="main_menu" >
+         <div class="flex-container-menu-margin" ></div>
+         <a class="menu-button" href="#" ><div class="flex-item color5">Контакты</div></a>
+         <a class="menu-button" href="#" ><div class="flex-item color4">Новости</div></a>
+         <a class="menu-button" href="#" ><div class="flex-item color3">Услуги</div></a>
+         <a class="menu-button" href="#" ><div class="flex-item color2">Наши проекты</div></a>
+         <a class="menu-button" href="#" ><div class="flex-item color1">Главная</div></a>
+       </div>
+     </div>
+         <div style="font-weight: 500;font-size: 16px;line-height: 20px;text-align: center;color: #FFFFFF; margin-top: 319px"> <p>Передовая IT студия</p></div>
+         <div style="font-weight: 800;font-size: 48px;line-height: 64px;text-align: center;color: #FFFFFF;align-items: center">Мы создаем легкие решения <br> сложных задач и проблем</div>
+  <div class="flex-container-mainframe-button-back">
+    <a class="button-blue" href="#">
+      <div style="position: relative; width: 100%">
+          <img src="img/button-img.png" alt=""/>
+          <h3 style="position: absolute; top: 2px; left: 16%;width: 100%">Наши проекты</h3>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="flex-container-info">
+  <div style="display: flex; flex-direction: column">
+    <div style="align-content: center">
+      <div class="heading" style="text-align: center">Мы создаем мобильные приложения<br>для крупных корпораций</div>
+      <p class="text" style="text-align: center">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem<br> Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+    </div>
+  </div>
+
+  <div style="display: inline-flex;flex-direction: row; flex-wrap: wrap; justify-content: space-around; margin-top: 116px">
+    <div style="display: flex; flex-direction: row">
+      <div>
+        <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <circle cx="55" cy="55" r="54.5" stroke="#E0E0E0"/>
+          <circle cx="55" cy="55" r="44.5" stroke="#4985FF"/>
+          <image x="22" y="25" width="60" height="60" href="img/project-svg.svg" />
+        </svg>
+
+      </div>
+      <div style="margin-left: 17px">
+        <h2>Создание сайтов</h2>
+        <p class="text">Lorem Ipsum - это текст- <br>"рыба", часто используе <br>в печати и вэб-дизайне.
+        </p>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row">
+      <div>
+        <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <circle cx="55" cy="55" r="54.5" stroke="#E0E0E0"/>
+          <circle cx="55" cy="55" r="44.5" stroke="#4985FF"/>
+          <image x="22" y="25" width="60" height="60" href="img/project-svg.svg" />
+        </svg>
+
+      </div>
+      <div style="margin-left: 17px">
+        <h2>Создание сайтов</h2>
+        <p class="text">Lorem Ipsum - это текст- <br>"рыба", часто используе <br>в печати и вэб-дизайне.
+        </p>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row">
+      <div>
+        <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <circle cx="55" cy="55" r="54.5" stroke="#E0E0E0"/>
+          <circle cx="55" cy="55" r="44.5" stroke="#4985FF"/>
+          <image x="22" y="25" width="60" height="60" href="img/project-svg.svg" />
+        </svg>
+
+      </div>
+      <div style="margin-left: 17px">
+        <h2>Создание сайтов</h2>
+        <p class="text">Lorem Ipsum - это текст- <br>"рыба", часто используе <br>в печати и вэб-дизайне.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="flex-container-mainframe-button-back" style="margin-top: 55px">
+    <a class="button-blue" href="#">
+      <div style="position: relative; width: 100%">
+        <img src="img/button-img.png" alt=""/>
+        <h3 style="position: absolute; top: 2px; left: 23%;width: 100%">Все услуги</h3>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="flex-container-projects-back">
+  <div class="flex-container-projects">
+    <div>
+      <div style="margin-top: 152px" class="heading">Высокие стандарты разработки</div>
+      <div class="text" style="margin-top: 40px">Lorem Ipsum - это текст-"рыба", часто используемый в печати<br> и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"<br> для текстов на латинице с начала XVI века.<br>  стандартной "рыбой" для текстов на латинице<br> с начала XVI века. </div>
+      <div style="margin-top: 30px"><a href="#">Подробнее о компании</a></div>
+    </div>
+    <div style="margin-top: 100px">
+      <img src="img/projects-img.png" alt="">
+    </div>
+  </div>
+
+  <div class="flex-container-projects-bottom-border">
+    <div class="flex-container-projects-bottom-info">
+      <div class="flex-item-bottom-info">
+          <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
+        <div class="text">Наши проекты</div>
+        </div>
+      <div class="flex-item-bottom-info">
+        <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
+        <div class="text">Наши проекты</div>
+      </div>
+      <div class="flex-item-bottom-info">
+        <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
+        <div class="text">Наши проекты</div>
+      </div>
+      <div class="flex-item-bottom-info">
+        <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
+        <div class="text">Наши проекты</div>
+      </div>
+      <div class="flex-item-bottom-info">
+        <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
+        <div class="text">Наши проекты</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex-container-spec" >
+  <div class="flex-container-spec-back">
+    <div>
+      <div>Наши работы, на которых<br>мы специализируемся</div>
+      <div class="flex-item-bottom-info">
+        <a class="button-blue" href="#">
+          <div style="position: relative; width: 100%">
+            <img src="img/button-img.png" alt=""/>
+            <h3 style="position: absolute; top: 2px; left: 16%;width: 100%">Наши проекты</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+</html>
+

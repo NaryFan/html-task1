@@ -1,0 +1,11 @@
+<svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" >
+  <defs>
+    <style>
+
+      }
+    </style>
+  </defs>
+  <circle cx="55" cy="55" r="54.5" stroke="#E0E0E0"/>
+  <circle cx="55" cy="55" r="44.5" stroke="#4985FF"/>
+  <image x="22" y="25" width="60" height="60" href="project-svg.svg" />
+</svg>
