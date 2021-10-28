@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="" xmlns:style="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="utf-8">
@@ -15,7 +15,8 @@
     }
 
     div{
-      font-family: Montserrat;
+      font-family: Montserrat,serif;
+
     }
 
     .flex-container-mainframe {
@@ -64,6 +65,19 @@
       align-content: center;
     }
 
+    .button-blue{
+      background-image: url(./img/button-img.png);
+      background-position: center, center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      padding-bottom: 5px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      border-radius: 30px;
+    }
+
     .flex-container-info{
       display: flex;
       flex-wrap: wrap;
@@ -108,15 +122,16 @@
       display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center;
     }
 
     .flex-item-bottom-info-title{
       display: flex;
       flex-direction: row;
+      align-content: center;
+      flex-wrap: wrap;
+
+      justify-content: space-around;
     }
-
-
 
     a.menu-button {
       outline: none;
@@ -132,33 +147,21 @@
       color: white;
     }
 
-    /*a:focus {
-      border-bottom: 1px solid;
-      background: none;
-    }*/
 
-   /* a:hover{ border-bottom: 2px solid #FFFFFF}*/
-    a.menu-button:hover { border-bottom: 2px solid #FFFFFF}
+
+    a.menu-button {  border: 1px solid transparent; }
+
+    a.menu-button:hover {border-bottom: 1px solid #FFFFFF}
 
     a.button-blue {
       outline: none;
-    }
-
-    a.button-blue {
       color: white;
-    }
+      text-decoration: none;
 
-    a.button-blue {
-      color: white;
     }
-    /* .color1 {background-color: #675BA7;}
-     .color2 {background-color: #9BC850;}
-     .color3 {background-color: #A62E5C;}
-     .color4 {background-color: #2A9FBC;}
-     .color5 {background-color: #F15B2A;}*/
 
     .text{
-      font-family: Montserrat;
+      font-family: Montserrat,serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -167,16 +170,180 @@
       color: #999999;
     }
 
-    .flex-container-spec-back {
-      background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
-      height: 490px;
+    .flex-container-spec-title {
+      padding-top: 100px;
+      margin-left: 10%;
+      margin-right: 10%;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: space-around;
+      justify-content: space-between;
+
     }
 
+    .spec-content {
+      margin-top: 70px;
+      margin-right: 10%;
+      margin-left: 10%;
 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
+    .spec-item{
+      display: flex;
+      flex-direction: column;
 
+      width: 27%;
+    }
+
+    .flex-container-spec-back {
+      background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+      background-size: 100% 480px;
+    }
+
+    .flex-container-spec-border {
+      margin-top: 85px;
+      margin-left: 10%;
+      margin-right: 10%;
+
+      padding-bottom: 85px;
+      border-top: 1px solid #E0E0E0;
+    }
+
+    .flex-container-projects-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+
+      padding: 85px;
+      padding-right:  10%;
+      padding-left: 10%;
+
+      background: #F6F6F8;
+    }
+
+    .flex-container-projects-info-img-list{
+      margin-top: 70px;
+      margin-bottom: 50px;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+
+    .flex-item-projects-info-img-list {
+      margin: 0 7px;
+    }
+
+    .flex-container-info-page-background {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/mainfraim-img.png);
+      background-position: center center;
+      background-attachment: local;
+      background-size: cover;
+      height: 570px;
+    }
+
+    .flex-container-info-page{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding-top: 70px;
+    }
+
+    .info-title-text{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+    }
+
+    input{
+      background: #FFFFFF;
+      margin-top: 35px;
+
+      border: 1px solid #F2F2F2;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+      border-radius: 30px 0px 0px 30px;
+
+      width: 400px;
+      height: 45px;
+
+      margin-right: -5px;
+    }
+
+    button{
+      background: #4985FF;
+      box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+      border-radius: 0px 30px 30px 0px;
+
+      height: 45px;
+      width: 190px;
+
+      font-family: Montserrat;
+      color: #ffffff;
+      font-size: 16px;
+
+      margin-left: 0;
+    }
+
+    .flex-container-info-page-border {
+      border: 1px solid #E0E0E0;
+      width: 80%;
+      margin: 85px 10%;
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      background: #F6F6F8;
+      margin-top: 655px;
+      padding-top: 30px;
+      flex-wrap: wrap;
+
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .footer-item{
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-between;
+
+      flex-wrap: nowrap;
+    }
+
+    .footer-text {
+      font-size: 14px;
+      line-height: 22px;
+      margin-left: 3px;
+      color: #999999;
+
+      text-decoration: none;
+    }
+
+    .flex-container-footer-border {
+      border: 1px solid #E0E0E0;
+      width: 100%;
+      margin-top: 80px;
+      margin-bottom: 30px;
+    }
   </style>
 </head>
+
+
 <body>
 <div class="flex-container-mainframe">
      <div class="flex-container-menu-back">
@@ -190,12 +357,11 @@
        </div>
      </div>
          <div style="font-weight: 500;font-size: 16px;line-height: 20px;text-align: center;color: #FFFFFF; margin-top: 319px"> <p>Передовая IT студия</p></div>
-         <div style="font-weight: 800;font-size: 48px;line-height: 64px;text-align: center;color: #FFFFFF;align-items: center">Мы создаем легкие решения <br> сложных задач и проблем</div>
-  <div class="flex-container-mainframe-button-back">
-    <a class="button-blue" href="#">
-      <div style="position: relative; width: 100%">
-          <img src="img/button-img.png" alt=""/>
-          <h3 style="position: absolute; top: 2px; left: 16%;width: 100%">Наши проекты</h3>
+         <p style="font-weight: 800;font-size: 48px;line-height: 64px;text-align: center;color: #FFFFFF;align-items: center">Мы создаем легкие решения <br> сложных задач и проблем</p>
+  <div class="flex-container-mainframe-button-back" >
+    <a class="button-blue"  href="#">
+      <div style="position: relative; width: 100%;">
+          <p >Наши проекты</p>
       </div>
     </a>
   </div>
@@ -259,11 +425,8 @@
     </div>
   </div>
   <div class="flex-container-mainframe-button-back" style="margin-top: 55px">
-    <a class="button-blue" href="#">
-      <div style="position: relative; width: 100%">
-        <img src="img/button-img.png" alt=""/>
-        <h3 style="position: absolute; top: 2px; left: 23%;width: 100%">Все услуги</h3>
-      </div>
+    <a class="button-blue"  href="#">
+        <p >Все проекты</p>
     </a>
   </div>
 </div>
@@ -282,45 +445,168 @@
 
   <div class="flex-container-projects-bottom-border">
     <div class="flex-container-projects-bottom-info">
+
       <div class="flex-item-bottom-info">
-          <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
-        <div class="text">Наши проекты</div>
+          <div class="flex-item-bottom-info-title">
+              <img src="img/web-programming.svg" alt="">
+              <p style="font-size: 36px; margin-top: 0; margin-bottom: 0">125</p>
+          </div>
+        <p class="text">Наши проекты</p>
+      </div>
+
+      <div class="flex-item-bottom-info">
+        <div class="flex-item-bottom-info-title">
+          <img src="img/web-programming.svg" alt="">
+          <p style="font-size: 36px; margin-top: 0; margin-bottom: 0">125</p>
         </div>
-      <div class="flex-item-bottom-info">
-        <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
-        <div class="text">Наши проекты</div>
+        <p class="text">Наши проекты</p>
       </div>
+
       <div class="flex-item-bottom-info">
-        <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
-        <div class="text">Наши проекты</div>
+        <div class="flex-item-bottom-info-title">
+          <img src="img/web-programming.svg" alt="">
+          <p style="font-size: 36px; margin-top: 0; margin-bottom: 0">125</p>
+        </div>
+        <p class="text">Наши проекты</p>
       </div>
+
       <div class="flex-item-bottom-info">
-        <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
-        <div class="text">Наши проекты</div>
+        <div class="flex-item-bottom-info-title">
+          <img src="img/web-programming.svg" alt="">
+          <p style="font-size: 36px; margin-top: 0; margin-bottom: 0">125</p>
+        </div>
+        <p class="text">Наши проекты</p>
       </div>
+
       <div class="flex-item-bottom-info">
-        <div class="flex-item-bottom-info-title"><div><img src="img/web-programming.svg" alt=""></div> <div stile="size=36px; margin-left: 2%" >125</div></div>
-        <div class="text">Наши проекты</div>
+        <div class="flex-item-bottom-info-title">
+          <img src="img/web-programming.svg" alt="">
+          <p style="font-size: 36px; margin-top: 0; margin-bottom: 0">125</p>
+        </div>
+        <p class="text">Наши проекты</p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="flex-container-spec" >
-  <div class="flex-container-spec-back">
-    <div>
-      <div>Наши работы, на которых<br>мы специализируемся</div>
-      <div class="flex-item-bottom-info">
-        <a class="button-blue" href="#">
-          <div style="position: relative; width: 100%">
-            <img src="img/button-img.png" alt=""/>
-            <h3 style="position: absolute; top: 2px; left: 16%;width: 100%">Наши проекты</h3>
+<div>
+  <div class="flex-container-spec-back" >
+   <div class="flex-container-spec-title">
+     <p style="font-size: 36px; margin-top: 0; margin-bottom: 20px; color: #FFFFFF">Наши работы, на которых<br>мы специализируемся</p>
+      <div class="flex-container-mainframe-button-back" >
+        <a class="button-blue"  href="#">
+          <div style="position: relative; padding-left: 35px; padding-right: 35px; width: 100%;">
+            <p style="font-size: 16px">Все услуги</p>
           </div>
         </a>
       </div>
     </div>
 
+    <div class="spec-content">
+
+      <div class="spec-item">
+        <img src="./img/spec-img.png" alt="">
+        <p><a style="color: #4985FF;">01.</a> Исследование и упаковка</p>
+        <p style="color: #999999; font-size: 16px;">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        <a href="#">Подробнее</a>
+      </div>
+
+      <div class="spec-item">
+        <img src="./img/spec-img.png" alt="">
+        <p><a style="color: #4985FF;">01.</a> Исследование и упаковка</p>
+        <p style="color: #999999; font-size: 16px;">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        <a href="#">Подробнее</a>
+      </div>
+
+      <div class="spec-item">
+        <img src="./img/spec-img.png" alt="">
+        <p><a style="color: #4985FF;">01.</a> Исследование и упаковка</p>
+        <p style="color: #999999; font-size: 16px;">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        <a href="#">Подробнее</a>
+      </div>
+
+    </div>
+
+  <div class="flex-container-spec-border"></div>
+</div>
+</div>
+
+<div class="flex-container-projects-info">
+  <h2>Наши поекты</h2>
+  <p class="text" style="text-align: center;">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem<br> Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+
+  <div class="flex-container-projects-info-img-list">
+    <div class="flex-item-projects-info-img-list"><img src="./img/cod_img.png" alt=""></div>
+    <div class="flex-item-projects-info-img-list"><img src="./img/cod_img.png" alt=""></div>
+    <div class="flex-item-projects-info-img-list"><img src="./img/cod_img.png" alt=""></div>
+    <div class="flex-item-projects-info-img-list"><img src="./img/cod_img.png" alt=""></div>
   </div>
+
+  <div class="flex-container-mainframe-button-back" >
+    <a class="button-blue" style="margin-bottom: 130px" href="#">
+      <div style="position: relative; padding-left: 35px; padding-right: 35px; width: 100% ">
+        <p style="font-size: 16px">Наши проекты</p>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+
+<div class="flex-container-info-page-background">
+  <div class="flex-container-info-page">
+    <h2 style="font-size: 36px;line-height: 53px;text-align: center;color: #FFFFFF; margin-bottom: 0">Видео о нашей работе</h2>
+    <p class="text" style="color: #FFFFFF; margin-top: 30px; margin-bottom: 70px">Просто посмотрите, как мы работаем</p>
+    <img src="./img/video.png" alt="">
+    <div class="flex-container-info-page-border"></div>
+
+    <h3 class="info-title-text">Подпешись на нашу пассылку</h3>
+    <p class="text">Полезные статьи, акции, новости - получите все это сейчас!</p>
+    <div>
+      <input type="email" id="email" name="email" />
+      <button>Подписаться</button>
+    </div>
+
+    <p class="text"style="font-size: 14px">Мы не шлем спам, и передаем никому ваши данные.</p>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-item">
+    <h3>Контактная информация</h3>
+    <div style="display: flex; flex-direction: row"><img src="./img/Group.svg"><p class="footer-text">test@test.ru</p></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/phone-img.svg"><p class="footer-text">+8 777 555 66 99</p></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/lock-img.svg"><p class="footer-text">Москва, Бульвар Ленина 33</p></div>
+  </div>
+
+  <div class="footer-item">
+    <h3>Основные ссылки</h3>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Главная</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Наши проекты</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Наши услуги</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Контакты</a></div>
+  </div>
+
+  <div class="footer-item">
+    <h3>Наши проекты</h3>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">РосНано</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Сколково</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Проект “Восток”</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">ТЭЦ Калининграда</a></div>
+  </div>
+
+  <div class="footer-item">
+    <h3>Социальные сети</h3>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">VK.com</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Instagram</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Facebook</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Twitter</a></div>
+  </div>
+
+  <div class="flex-container-footer-border"></div>
+
+  <p class="footer-text" style="text-align: center">(с) 2019. Все права защищены.</p>
 </div>
 
 </body>
