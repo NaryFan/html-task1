@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="" xmlns:style="http://www.w3.org/1999/xhtml">
+<html lang="">
 
 <head>
   <meta charset="utf-8">
@@ -20,9 +20,7 @@
     }
 
     .flex-container-mainframe {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/mainfraim-img.png);
-      background-position: center center;
-      background-attachment: fixed;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/mainfraim-img.png), fixed center center;
       background-size: cover;
       height: 900px;
     }
@@ -66,16 +64,31 @@
     }
 
     .button-blue{
-      background-image: url(./img/button-img.png);
-      background-position: center, center;
-      background-repeat: no-repeat;
+      background: #4985FF;
+      box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+      border-radius: 30px;
+
+      /*background-position: center, center;
+      background-repeat: no-repeat;*/
       background-size: 100%;
 
       padding-bottom: 5px;
       padding-left: 40px;
       padding-right: 40px;
+    }
 
-      border-radius: 30px;
+    .button-blue-mail-input{
+      background: #4985FF;
+      box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+      border-radius: 0 30px 30px 0;
+
+      /*background-position: center, center;
+      background-repeat: no-repeat;*/
+      background-size: 100%;
+
+      padding-bottom: 5px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     .flex-container-info{
@@ -202,8 +215,13 @@
     }
 
     .flex-container-spec-back {
-      background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
-      background-size: 100% 480px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      background-image: url("./img/Rectangle.png");
+      background-size: 100% 40%;
+      background-repeat: no-repeat
     }
 
     .flex-container-spec-border {
@@ -221,9 +239,7 @@
       align-items: center;
       flex-wrap: wrap;
 
-      padding: 85px;
-      padding-right:  10%;
-      padding-left: 10%;
+      padding: 85px 10%;
 
       background: #F6F6F8;
     }
@@ -244,9 +260,7 @@
     }
 
     .flex-container-info-page-background {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/mainfraim-img.png);
-      background-position: center center;
-      background-attachment: local;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/mainfraim-img.png), local center center;
       background-size: cover;
       height: 570px;
     }
@@ -272,8 +286,8 @@
 
       border: 1px solid #F2F2F2;
       box-sizing: border-box;
-      box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-      border-radius: 30px 0px 0px 30px;
+      box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+      border-radius: 30px 0 0 30px;
 
       width: 400px;
       height: 45px;
@@ -283,8 +297,8 @@
 
     button{
       background: #4985FF;
-      box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-      border-radius: 0px 30px 30px 0px;
+      box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+      border-radius: 30px;
 
       height: 45px;
       width: 190px;
@@ -489,8 +503,7 @@
   </div>
 </div>
 
-<div>
-  <div class="flex-container-spec-back" >
+<div class="flex-container-spec-back" >
    <div class="flex-container-spec-title">
      <p style="font-size: 36px; margin-top: 0; margin-bottom: 20px; color: #FFFFFF">Наши работы, на которых<br>мы специализируемся</p>
       <div class="flex-container-mainframe-button-back" >
@@ -527,8 +540,8 @@
 
     </div>
 
+
   <div class="flex-container-spec-border"></div>
-</div>
 </div>
 
 <div class="flex-container-projects-info">
@@ -563,11 +576,11 @@
     <h3 class="info-title-text">Подпешись на нашу пассылку</h3>
     <p class="text">Полезные статьи, акции, новости - получите все это сейчас!</p>
     <div>
-      <input type="email" id="email" name="email" />
-      <button>Подписаться</button>
+      <label for="email"></label><input type="email" id="email" name="email" />
+      <button class="button-blue-mail-input">Подписаться</button>
     </div>
 
-    <p class="text"style="font-size: 14px">Мы не шлем спам, и передаем никому ваши данные.</p>
+    <p class="text" style="font-size: 14px">Мы не шлем спам, и передаем никому ваши данные.</p>
 
   </div>
 </div>
@@ -575,33 +588,33 @@
 <div class="footer">
   <div class="footer-item">
     <h3>Контактная информация</h3>
-    <div style="display: flex; flex-direction: row"><img src="./img/Group.svg"><p class="footer-text">test@test.ru</p></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/phone-img.svg"><p class="footer-text">+8 777 555 66 99</p></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/lock-img.svg"><p class="footer-text">Москва, Бульвар Ленина 33</p></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/Group.svg" alt="Group"><p class="footer-text">test@test.ru</p></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/phone-img.svg" alt="phone"><p class="footer-text">+8 777 555 66 99</p></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/lock-img.svg" alt="lock"><p class="footer-text">Москва, Бульвар Ленина 33</p></div>
   </div>
 
   <div class="footer-item">
     <h3>Основные ссылки</h3>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Главная</a></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Наши проекты</a></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Наши услуги</a></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Контакты</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt="pointer"><a href="#" class="footer-text">Главная</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt="pointer"><a href="#" class="footer-text">Наши проекты</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt="pointer"><a href="#" class="footer-text">Наши услуги</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt="pointer"><a href="#" class="footer-text">Контакты</a></div>
   </div>
 
   <div class="footer-item">
     <h3>Наши проекты</h3>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">РосНано</a></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Сколково</a></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Проект “Восток”</a></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">ТЭЦ Калининграда</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt=""><a href="#" class="footer-text">РосНано</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt=""><a href="#" class="footer-text">Сколково</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt="pointer"><a href="#" class="footer-text">Проект “Восток”</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt="pointer"><a href="#" class="footer-text">ТЭЦ Калининграда</a></div>
   </div>
 
   <div class="footer-item">
     <h3>Социальные сети</h3>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">VK.com</a></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Instagram</a></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Facebook</a></div>
-    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg"><a href="#" class="footer-text">Twitter</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt=""><a href="#" class="footer-text">VK.com</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt="pointer"><a href="#" class="footer-text">Instagram</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt="pointer"><a href="#" class="footer-text">Facebook</a></div>
+    <div style="display: flex; flex-direction: row"><img src="./img/pointer.svg" alt="pointer"><a href="#" class="footer-text">Twitter</a></div>
   </div>
 
   <div class="flex-container-footer-border"></div>
